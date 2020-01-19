@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Command Line Reference</title>
+    <link href='style.css' rel='stylesheet' type='text/css'/>
+</head>
+<body>
+    <table class="minimalistBlack">
+        <thead>
+        <tr>
+        <th>Command</th>
+        <th>Example</th>
+        <th>Explanation</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+
+        <tr>
+        <td>
+        <h3>&gt;</h3>
+        </td>
+        <td>
+        <pre ><span>$ cat oceans.txt &gt; continents.txt</span></pre>
+        </td>
+        <td><code>&gt;</code> takes the standard output of the command on the left and redirects it to the file on the right.</td>
+        </tr>
+
+        <tr>
+        <td>
+        <h3>&gt;&gt;</h3>
+        </td>
+        <td>
+        <pre><span>$ cat glaciers.txt &gt;&gt; rivers.txt</span></pre>
+        </td>
+        <td><code>&gt;&gt;</code> takes the standard output of the command on the left and <em >appends</em> (adds) it to the file on the right.</td>
+        </tr>
+
+        <tr>
+        <td>
+        <h3>&lt;</h3>
+        </td>
+        <td>
+        <pre><span>$ cat &lt; lakes.txt</span></pre>
+        </td>
+        <td><code>&lt;</code> takes the standard input from the file on the right and inputs it into the program on the left.</td>
+        </tr>
+
+        <tr>
+        <td>
+        <h3>|</h3>
+        </td>
+        <td>
+        <pre><span>$ cat volcanoes.txt | wc</span></pre>
+        </td>
+        <td><code>|</code> is a &ldquo;pipe&rdquo;. The <code>|</code> takes the standard output of the command on the left, and <em>pipes</em> it as standard input to the command on the right. You can think of this as &ldquo;command to command&rdquo; redirection.</td>
+        </tr>
+
+        <tr>
+        <td>
+        <h3>~/.bash_profile</h3>
+        </td>
+        <td>
+        <pre><span>$ nano ~/.bash_profile</span></pre>
+        </td>
+        <td><strong>~/.bash_profile</strong> is the name of file used to store environment settings. It is commonly called the &ldquo;bash profile&rdquo;. When a session starts, it will load the contents of the bash profile before executing commands.</td>
+        </tr>
+
+        <tr>
+        <td>
+        <h3>alias</h3>
+        </td>
+        <td>
+        <pre><span>alias pd="pwd"</span></pre>
+        </td>
+        <td>The <code>alias</code> command allows you to create keyboard shortcuts, or aliases, for commonly used commands.</td>
+        </tr>
+
+        <tr>
+                <td>
+                <h3>cd</h3>
+                </td>
+                <td>
+                <pre><span>$ cd Desktop/</span></pre>
+                </td>
+                <td><code>cd</code> takes a directory name as an argument, and switches into that directory.</td>
+                </tr>
+        <tr>
+
+        <tr>
+                <td>
+                <h3>cd</h3>
+                </td>
+                <td>
+                <pre><span>$ cd jan/memory</span></pre>
+                </td>
+                <td>To navigate directly to a directory, use <code>cd</code> with the directory’s path as an argument. Here, <code>cd jan/memory/</code> command navigates directly to the <code>jan/memory</code>directory .</td>
+                </tr>
+        <tr>            
+        <td>cell1_7</td>
+        <td>cell2_7</td>
+        <td>cell3_7</td>
+        </tr>
+        
+        <tr>
+        
+        </tr>
+        </tbody>
+        </table>
+        <!-- table generated with help from https://divtable.com/table-styler/ -->
+        <!-- from: https://www.codecademy.com/articles/command-line-commands -->
+</body>
+</html>
+
+table.minimalistBlack {
+    font-family: "Courier New", Courier, monospace;
+    border: 3px solid #000000;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.minimalistBlack td, table.minimalistBlack th {
+    border: 1px solid #000000;
+    padding: 5px 4px;
+  }
+  table.minimalistBlack tbody td {
+    font-size: 13px;
+  }
+  table.minimalistBlack thead {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    border-bottom: 3px solid #000000;
+  }
+  table.minimalistBlack thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+  }
+  table.minimalistBlack tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    border-top: 3px solid #000000;
+  }
+  table.minimalistBlack tfoot td {
+    font-size: 14px;
+  }
